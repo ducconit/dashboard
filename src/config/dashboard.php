@@ -35,5 +35,6 @@ return [
 	'view' => [
 		'name' => 'dashboard',
 		'path' => resource_path('views/dashboard')
-	]
+	],
+	'model' => \App\Models\User::class
 ];

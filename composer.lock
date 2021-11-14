@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "168bc70652b4c530330164f9d1abff91",
+    "content-hash": "786a2e2ab03720f200dc04f00b9f0fae",
     "packages": [
         {
             "name": "brick/math",
@@ -141,44 +141,6 @@
                 "source": "https://github.com/dflydev/dflydev-dot-access-data/tree/main"
             },
             "time": "2021-10-06T16:53:15+00:00"
-        },
-        {
-            "name": "dnt/ecommerce",
-            "version": "dev-master",
-            "dist": {
-                "type": "path",
-                "url": "../ecommerce",
-                "reference": "0c34cdc65618e328e9a3f8fcc84cca5d82e811a5"
-            },
-            "require": {
-                "laravel/framework": "^8.65",
-                "php": "^7.3|^8.0"
-            },
-            "type": "module",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "DNT\\Ecommerce\\Providers\\EcommerceServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "DNT\\Ecommerce\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "ducnt",
-                    "email": "ducconit@gmail.com"
-                }
-            ],
-            "transport-options": {
-                "relative": true
-            }
         },
         {
             "name": "doctrine/inflector",
@@ -770,6 +732,64 @@
                 "source": "https://github.com/laravel/serializable-closure"
             },
             "time": "2021-11-10T14:45:06+00:00"
+        },
+        {
+            "name": "laravel/ui",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/ui.git",
+                "reference": "88e9318fce55c4266ccc9db6b8481d5c268c6e3d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/ui/zipball/88e9318fce55c4266ccc9db6b8481d5c268c6e3d",
+                "reference": "88e9318fce55c4266ccc9db6b8481d5c268c6e3d",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^8.42",
+                "illuminate/filesystem": "^8.42",
+                "illuminate/support": "^8.42",
+                "illuminate/validation": "^8.42",
+                "php": "^7.3|^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Ui\\UiServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Ui\\": "src/",
+                    "Illuminate\\Foundation\\Auth\\": "auth-backend/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Laravel UI utilities and presets.",
+            "keywords": [
+                "laravel",
+                "ui"
+            ],
+            "support": {
+                "source": "https://github.com/laravel/ui/tree/master"
+            },
+            "time": "2021-11-05T08:26:09+00:00"
         },
         {
             "name": "league/commonmark",
@@ -4598,7 +4618,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "dnt/ecommerce": 20
+        "laravel/ui": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
