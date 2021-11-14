@@ -15,8 +15,7 @@
   ],
   "minimum-stability": "dev",
   "require": {
-    "php": "^7.3|^8.0",
-    "dnt/ecommerce": "dev-master"
+    "php": "^7.3|^8.0"
   },
   "extra": {
     "laravel": {
@@ -26,11 +25,5 @@
           "DNT\\Dashboard\\Providers\\ViewServiceProvider"
       ]
     }
-  },
-  "repositories": [
-    {
-      "type": "path",
-      "url": "../*"
-    }
-  ]
+  }
 }
