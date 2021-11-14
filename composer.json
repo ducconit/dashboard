@@ -1,0 +1,36 @@
+{
+  "name": "dnt/dashboard",
+  "type": "module",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "DNT\\Dashboard\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Ducnt",
+      "email": "ducconit@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": "^7.3|^8.0",
+    "dnt/ecommerce": "dev-master"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+          "DNT\\Dashboard\\Providers\\DashboardServiceProvider",
+          "DNT\\Dashboard\\Providers\\RouteServiceProvider",
+          "DNT\\Dashboard\\Providers\\ViewServiceProvider"
+      ]
+    }
+  },
+  "repositories": [
+    {
+      "type": "path",
+      "url": "../*"
+    }
+  ]
+}
